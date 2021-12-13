@@ -9,12 +9,12 @@ export default function CountDownWidget({ kickOffTime }: CountdownWidgetProps) {
 
   useEffect(() => {
     const timerId = setInterval(() => {
-      const diffTime = +kickOffTime - Date.now();
+      const diffTime: number = +kickOffTime - Date.now();
 
-      let days = diffTime / (24 * 60 * 60 * 1000);
-      let hours = (days % 1) * 24;
-      let minutes = (hours % 1) * 60;
-      let secs = (minutes % 1) * 60;
+      let days: number = diffTime / (24 * 60 * 60 * 1000);
+      let hours: number = (days % 1) * 24;
+      let minutes: number = (hours % 1) * 60;
+      let secs: number = (minutes % 1) * 60;
 
       [days, hours, minutes, secs] = [
         Math.floor(days),
