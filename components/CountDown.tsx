@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const CountDownWidget = () => {
+export default function CountDownWidget() {
   const [[days, hrs, mins, secs], setTime] = useState([0, 0, 0, 0]);
 
   useEffect(() => {
@@ -36,27 +36,31 @@ const CountDownWidget = () => {
         Arriving in...
       </div>
       <div className="flex text-primary text-center gap-x-4">
-        <div className="rounded-md bg-light-800 p-6">
+        <div className="rounded-md bg-light-800 p-4 md:p-6">
           <div className="border-b border-primary font-medium text-xl mb-1 pb-2">
             {days}
           </div>
           <div className="text-lg">Days</div>
         </div>
-        <div className="rounded-md bg-light-800 p-6">
+        <div className="rounded-md bg-light-800 p-4 md:p-6">
           <div className="border-b border-primary font-medium text-xl mb-1 pb-2">
             {hrs}
           </div>
           <div className="text-lg">Hrs</div>
         </div>
-        <div className="rounded-md bg-light-800 p-6">
+        <div className="rounded-md bg-light-800 p-4 md:p-6">
           <div className="border-b border-primary font-medium text-xl mb-1 pb-2">
             {mins}
           </div>
           <div className="text-lg">Mins</div>
         </div>
+        <div className="rounded-md bg-light-800 p-4 md:p-6">
+          <div className="border-b border-primary font-medium text-xl mb-1 pb-2">
+            {secs}
+          </div>
+          <div className="text-lg">Secs</div>
+        </div>
       </div>
     </div>
   );
-};
-
-export default CountDownWidget;
+}
