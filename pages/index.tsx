@@ -1,8 +1,7 @@
-import type { NextPage } from "next";
 import Head from "next/head";
 import CountDownWidget from "../components/CountDown";
 
-const ComingSoonPage: NextPage = () => {
+export default function ComingSoonPage() {
   return (
     <div
       className="bg-primary bg-no-repeat bg-cover font-body text-white justify-between"
@@ -73,6 +72,4 @@ const ComingSoonPage: NextPage = () => {
       </div>
     </div>
   );
-};
-
-export default ComingSoonPage;
+}

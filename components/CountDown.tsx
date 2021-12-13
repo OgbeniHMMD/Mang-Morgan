@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
-interface CountdownWidgetProps {
+interface CountDownWidgetProps {
   kickOffTime: number;
 }
 
-export default function CountDownWidget({ kickOffTime }: CountdownWidgetProps) {
+export default function CountDownWidget({ kickOffTime }: CountDownWidgetProps) {
   const [[days, hrs, mins, secs], setTime] = useState([0, 0, 0, 0]);
 
   useEffect(() => {
@@ -47,12 +47,12 @@ export default function CountDownWidget({ kickOffTime }: CountdownWidgetProps) {
   );
 }
 
-interface CountdownBlockType {
+interface CountDownBlockProps {
   label: string;
   value: number;
 }
 
-export function CountDownBlock({ label, value }: CountdownBlockType) {
+export function CountDownBlock({ label, value }: CountDownBlockProps) {
   return (
     <div className="rounded-md bg-light-800 p-6">
       <div className="border-b border-primary font-medium text-xl mb-1 pb-2">
