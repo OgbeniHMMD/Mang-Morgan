@@ -62,7 +62,7 @@ const ComingSoonPage: NextPage = () => {
             </div>
           </div>
 
-          <CountDownWidget kickoffDate={1642201200000} />
+          <CountDownWidget kickOffTime={1642201200000} />
         </main>
 
         <footer className="bg-primary flex bg-opacity-90 p-4 pb-12 gap-x-4 justify-end md:bg-transparent md:opacity-100">

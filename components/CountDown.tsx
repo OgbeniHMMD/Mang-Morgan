@@ -1,18 +1,15 @@
 import { useEffect, useState } from "react";
 
-interface CountdownWidgetType {
-  kickoffDate: number;
+interface CountdownWidgetProps {
+  kickOffTime: number;
 }
 
-export default function CountDownWidget({ kickoffDate }: CountdownWidgetType) {
-  const kickOff: number = 1642201200000;
+export default function CountDownWidget({ kickOffTime }: CountdownWidgetProps) {
   const [[days, hrs, mins, secs], setTime] = useState([0, 0, 0, 0]);
 
   useEffect(() => {
-    const EXPIRY = new Date(kickOff).getTime();
-
     const timerId = setInterval(() => {
-      const diffTime = +EXPIRY - Date.now();
+      const diffTime = +kickOffTime - Date.now();
 
       let days = diffTime / (24 * 60 * 60 * 1000);
       let hours = (days % 1) * 24;
