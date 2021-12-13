@@ -1,10 +1,15 @@
 import { useEffect, useState } from "react";
 
-export default function CountDownWidget() {
+interface CountdownWidgetType {
+  kickoffDate: number;
+}
+
+export default function CountDownWidget({ kickoffDate }: CountdownWidgetType) {
+  const kickOff: number = 1642201200000;
   const [[days, hrs, mins, secs], setTime] = useState([0, 0, 0, 0]);
 
   useEffect(() => {
-    const EXPIRY = new Date(1642201200000).getTime();
+    const EXPIRY = new Date(kickOff).getTime();
 
     const timerId = setInterval(() => {
       const diffTime = +EXPIRY - Date.now();
@@ -36,31 +41,27 @@ export default function CountDownWidget() {
         Arriving in...
       </div>
       <div className="flex text-primary text-center gap-x-4">
-        <div className="rounded-md bg-light-800 p-4 md:p-6">
-          <div className="border-b border-primary font-medium text-xl mb-1 pb-2">
-            {days}
-          </div>
-          <div className="text-lg">Days</div>
-        </div>
-        <div className="rounded-md bg-light-800 p-4 md:p-6">
-          <div className="border-b border-primary font-medium text-xl mb-1 pb-2">
-            {hrs}
-          </div>
-          <div className="text-lg">Hrs</div>
-        </div>
-        <div className="rounded-md bg-light-800 p-4 md:p-6">
-          <div className="border-b border-primary font-medium text-xl mb-1 pb-2">
-            {mins}
-          </div>
-          <div className="text-lg">Mins</div>
-        </div>
-        <div className="rounded-md bg-light-800 p-4 md:p-6">
-          <div className="border-b border-primary font-medium text-xl mb-1 pb-2">
-            {secs}
-          </div>
-          <div className="text-lg">Secs</div>
-        </div>
+        <CountDownBlock label="Days" value={days} />
+        <CountDownBlock label="Hrs" value={hrs} />
+        <CountDownBlock label="Mins" value={mins} />
+        <CountDownBlock label="Secs" value={secs} />
       </div>
+    </div>
+  );
+}
+
+interface CountdownBlockType {
+  label: string;
+  value: number;
+}
+
+export function CountDownBlock({ label, value }: CountdownBlockType) {
+  return (
+    <div className="rounded-md bg-light-800 p-6">
+      <div className="border-b border-primary font-medium text-xl mb-1 pb-2">
+        {value}
+      </div>
+      <div className="text-lg">{label}</div>
     </div>
   );
 }
