@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import CountDownWidget from "../components/CountDown";
 
 const ComingSoonPage: NextPage = () => {
   return (
@@ -18,7 +19,7 @@ const ComingSoonPage: NextPage = () => {
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
-          crossOrigin={true}
+          crossOrigin="true"
         />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
@@ -28,67 +29,43 @@ const ComingSoonPage: NextPage = () => {
       </Head>
 
       <div
-        className="container bg-none bg-no-repeat bg-right flex flex-col mx-auto min-h-screen text-white py-12 gap-y-8 justify-between"
+        className="container bg-no-repeat bg-right-bottom flex flex-col mx-auto min-h-screen text-white justify-between md:bg-right"
         style={{
           backgroundImage: "url('/images/construction-illustration.png')",
         }}
       >
-        <main className="flex h-full p-4 gap-x-4 justify-between items-center">
-          <div className="md:w-md">
-            <h1 className="font-black font-display text-white pb-8 text-3xl">
-              Mang Morgan
-            </h1>
+        <main className="bg-primary flex-grow h-full bg-opacity-90 p-4 py-12 md:bg-transparent md:w-md md:opacity-100 md:pb-8">
+          <h1 className="font-black font-display text-white text-xl pb-4 md:pb-8 md:text-3xl">
+            Mang Morgan
+          </h1>
 
-            <div className="font-black font-display text-white py-8 text-6xl">
-              WE ARE <br />
-              COMING SOON
-            </div>
+          <div className="font-black font-display text-white py-4 text-2xl md:py-8 md:text-3xl lg:text-5xl">
+            WE ARE <br />
+            COMING SOON
+          </div>
 
-            <div className="leading-normal tracking-wide">
-              Our website is under construction, but we are ready to go! Our
-              team is working on something amazing for you. You can subscribe to
-              our mailing list to get notified.
-            </div>
+          <div className="leading-normal tracking-wide">
+            Our website is under construction, but we are ready to go! Our team
+            is working on something amazing for you. You can subscribe to our
+            mailing list to get notified.
+          </div>
 
-            <div className="py-8">
-              <div className="border rounded-md flex overflow-hidden justify-between">
-                <input
-                  placeholder="Enter your mail"
-                  className="bg-transparent flex-grow p-2"
-                />
-                <button className="bg-light-50 text-primary py-3 px-8 hover:bg-light-100">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-
-            <div className="font-black font-display text-white py-8 text-3xl">
-              Arriving in...
-            </div>
-            <div className="flex text-primary text-center gap-x-4">
-              <div className="rounded-md bg-light-800 p-6">
-                <div className="border-b border-primary font-medium text-xl mb-1 pb-2">
-                  20
-                </div>
-                <div className="text-lg">Days</div>
-              </div>
-              <div className="rounded-md bg-light-800 p-6">
-                <div className="border-b border-primary font-medium text-xl mb-1 pb-2">
-                  20
-                </div>
-                <div className="text-lg">Hrs</div>
-              </div>
-              <div className="rounded-md bg-light-800 p-6">
-                <div className="border-b border-primary font-medium text-xl mb-1 pb-2">
-                  20
-                </div>
-                <div className="text-lg">Mins</div>
-              </div>
+          <div className="py-6 md:py-8">
+            <div className="border rounded-md flex overflow-hidden justify-between">
+              <input
+                placeholder="Enter your mail"
+                className="bg-transparent flex-grow p-2"
+              />
+              <button className="bg-light-50 text-primary py-3 px-8 hover:bg-light-100">
+                Subscribe
+              </button>
             </div>
           </div>
+
+          <CountDownWidget />
         </main>
 
-        <footer className="flex gap-x-4 justify-end">
+        <footer className="bg-primary flex bg-opacity-90 p-4 pb-12 gap-x-4 justify-end md:bg-transparent md:opacity-100">
           <a href="#facebook">Facebook</a>
           <a href="#Twitter">Twitter</a>
           <a href="#Instagram">Instagram</a>
