@@ -1,9 +1,5 @@
 import { useEffect, useState } from "react";
 
-interface CountDownWidgetProps {
-  kickOffTime: number;
-}
-
 export default function CountDownWidget({ kickOffTime }: CountDownWidgetProps) {
   const [[days, hrs, mins, secs], setTime] = useState([0, 0, 0, 0]);
 
@@ -47,11 +43,6 @@ export default function CountDownWidget({ kickOffTime }: CountDownWidgetProps) {
   );
 }
 
-interface CountDownBlockProps {
-  label: string;
-  value: number;
-}
-
 export function CountDownBlock({ label, value }: CountDownBlockProps) {
   return (
     <div className="rounded-md bg-light-800 p-6">
@@ -61,4 +52,12 @@ export function CountDownBlock({ label, value }: CountDownBlockProps) {
       <div className="text-lg">{label}</div>
     </div>
   );
+}
+
+interface CountDownWidgetProps {
+  kickOffTime: number;
+}
+interface CountDownBlockProps {
+  label: string;
+  value: number;
 }
