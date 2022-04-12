@@ -13,11 +13,11 @@ export default function HomePage() {
       >
         <main className="container flex mx-auto min-h-screen bg-black/20 text-white w-full px-4 items-center justify-between">
           <section className="max-w-screen-md py-20">
-            <h1 className="font-black font-display text-4xl md:text-6xl lg:text-8xl">
+            <h1 className="font-black font-display text-4xl md:text-6xl lg:text-7xl">
               Lorem ipsum dolor sit amet{" "}
               <span className="text-primary">ipsum dolor</span>
             </h1>
-            <div className="py-12">
+            <div className="text-lg py-12">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
               tellus ornare magna id nisl, et.
             </div>
