@@ -12,9 +12,9 @@ export default function AboutPage() {
         >
           <main className="container mx-auto min-h-screen bg-black/20 text-white w-full px-4">
             <section className="py-20">
-              <h1 className="font-black font-display pt-20 text-4xl md:text-6xl lg:text-7xl">
-                About
-                <span className="text-primary">Us</span>
+              <h1 className="flex font-black font-display pt-20 text-4xl gap-4 md:text-6xl lg:text-7xl ">
+                <div>About</div>
+                <div className="text-primary">Us</div>
               </h1>
               <div className="max-w-screen-sm text-lg py-12 ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim
