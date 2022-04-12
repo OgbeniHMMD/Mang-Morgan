@@ -1,4 +1,5 @@
 import Link from "next/link";
+// import { ChevronRight } from "@heroicons/react/solid";
 import FooterSection from "../components/_partials/FooterSection";
 import TopNavigationBar from "../components/_partials/TopNavigationBar";
 
@@ -22,9 +23,11 @@ export default function HomePage() {
               tellus ornare magna id nisl, et.
             </div>
             <div>
-              <a className="text-primary underline">
-                <Link href="/#about">Discover Mang Morgan</Link>
-              </a>
+              <Link href="/#about">
+                <a className="border-primary border-b text-primary pb-1">
+                  Discover Mang Morgan
+                </a>
+              </Link>
             </div>
           </section>
 
