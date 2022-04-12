@@ -4,7 +4,7 @@ import CountDownWidget from "../components/CountDown";
 export default function ComingSoonPage() {
   return (
     <div
-      className="bg-primary bg-no-repeat bg-cover font-body text-white justify-between"
+      className="bg-alt bg-no-repeat bg-cover font-body text-white justify-between"
       style={{ backgroundImage: 'url("/images/backgrounds/blue-bg.png")' }}
     >
       <Head>
@@ -33,7 +33,7 @@ export default function ComingSoonPage() {
           backgroundImage: "url('/images/construction-illustration.png')",
         }}
       >
-        <main className="bg-primary flex-grow h-full bg-opacity-90 p-4 py-12 md:bg-transparent md:w-md md:opacity-100 md:pb-8">
+        <main className="bg-alt flex-grow h-full bg-opacity-90 p-4 py-12 md:bg-transparent md:w-md md:opacity-100 md:pb-8">
           <h1 className="font-black font-display text-white text-xl pb-4 md:pb-8 md:text-3xl">
             Mang Morgan
           </h1>
@@ -55,7 +55,7 @@ export default function ComingSoonPage() {
                 placeholder="Enter your mail"
                 className="bg-transparent flex-grow p-2"
               />
-              <button className="bg-light-50 text-primary py-3 px-8 hover:bg-light-100">
+              <button className="bg-light-50 text-alt py-3 px-8 hover:bg-light-100">
                 Subscribe
               </button>
             </div>
@@ -64,7 +64,7 @@ export default function ComingSoonPage() {
           <CountDownWidget kickOffTime={1641553200000} />
         </main>
 
-        <footer className="bg-primary flex bg-opacity-90 p-4 pb-12 gap-x-4 justify-end md:bg-transparent md:opacity-100">
+        <footer className="bg-alt flex bg-opacity-90 p-4 pb-12 gap-x-4 justify-end md:bg-transparent md:opacity-100">
           <a href="#facebook">Facebook</a>
           <a href="#Twitter">Twitter</a>
           <a href="#Instagram">Instagram</a>

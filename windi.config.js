@@ -13,7 +13,8 @@ export default defineConfig({
         body: ["Cabin", "Open Sans"],
       },
       colors: {
-        primary: "#1C3386",
+        alt: "#1C3386",
+        primary: "DCBA40",
       },
     },
   },

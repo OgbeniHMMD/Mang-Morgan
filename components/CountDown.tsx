@@ -33,7 +33,7 @@ export default function CountDownWidget({ kickOffTime }: CountDownWidgetProps) {
       <div className="font-black font-display text-white py-8 text-2xl md:text-3xl">
         Arriving in...
       </div>
-      <div className="flex text-primary text-center gap-x-4">
+      <div className="flex text-alt text-center gap-x-4">
         <CountDownBlock label="Days" value={days} />
         <CountDownBlock label="Hrs" value={hrs} />
         <CountDownBlock label="Mins" value={mins} />
@@ -46,7 +46,7 @@ export default function CountDownWidget({ kickOffTime }: CountDownWidgetProps) {
 export function CountDownBlock({ label, value }: CountDownBlockProps) {
   return (
     <div className="rounded-md bg-light-800 p-6">
-      <div className="border-b border-primary font-medium text-xl mb-1 pb-2">
+      <div className="border-b border-alt font-medium text-xl mb-1 pb-2">
         {value}
       </div>
       <div className="text-lg">{label}</div>
