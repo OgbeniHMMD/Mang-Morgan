@@ -6,7 +6,7 @@ export default function DefaultLayout({ children }: Children) {
   return (
     <main className="font-body">
       <TopNavigationBar />
-      <div>{children}</div>xxx
+      <div>{children}</div>
       <FooterSection />
     </main>
   );
