@@ -14,7 +14,8 @@ export default defineConfig({
       },
       colors: {
         alt: "#1C3386",
-        primary: "DCBA40",
+        primary: "#DCBA40",
+        black: "#121212",
       },
     },
   },
