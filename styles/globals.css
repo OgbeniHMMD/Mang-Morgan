@@ -33,3 +33,6 @@
   font-family: "lovelyFont";
   src: url("/fonts/TT Commons Black.otf");
 }
+
+/* Playfair Display */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");

@@ -8,9 +8,8 @@ export default defineConfig({
   theme: {
     extend: {
       fontFamily: {
-        mono: ["Space Mono", "monospace", "ui-monospace", "SFMono-Regular"],
-        display: ["Poppins", "Oswald"],
-        body: ["tt-commons", "Cabin", "Open Sans"],
+        display: ["Playfair Display"],
+        body: ["tt-commons"],
       },
       colors: {
         alt: "#1C3386",
