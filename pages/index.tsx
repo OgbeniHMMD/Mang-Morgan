@@ -9,7 +9,7 @@ export default function HomePage() {
 
       <section
         style={{ backgroundImage: "url(/images/home-hero/001.jpeg)" }}
-        className="bg- bg-no-repeat min-h-screen"
+        className="bg-no-repeat bg-fixed min-h-screen"
       >
         <main className="container flex mx-auto min-h-screen bg-black/20 text-white w-full px-4 items-center justify-between">
           <section className="max-w-screen-md py-20">
