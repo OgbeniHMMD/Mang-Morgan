@@ -3,9 +3,9 @@ export default function NavigationDrawer() {
     {
       title: "Who we/are",
       links: [
-        { title: "About Us", slug: "#" },
-        { title: "Mission & Vision", slug: "#" },
-        { title: "Meet The Team", slug: "#" },
+        { title: "About Us", slug: "/about#top" },
+        { title: "Mission & Vision", slug: "/about#mision-vision" },
+        { title: "Meet The Team", slug: "/about#team" },
       ],
     },
     {

@@ -1,13 +1,10 @@
 import Link from "next/link";
 import { ChevronRightIcon } from "@heroicons/react/solid";
-import FooterSection from "../components/_partials/FooterSection";
-import TopNavigationBar from "../components/_partials/TopNavigationBar";
+import DefaultLayout from "../layouts/DefaultLayout";
 
 export default function HomePage() {
   return (
-    <main className="font-body">
-      <TopNavigationBar />
-
+    <DefaultLayout>
       <section
         style={{ backgroundImage: "url(/images/home-hero/001.jpeg)" }}
         className="bg-no-repeat bg-fixed min-h-screen"
@@ -35,8 +32,6 @@ export default function HomePage() {
           <aside>x</aside>
         </main>
       </section>
-
-      <FooterSection />
-    </main>
+    </DefaultLayout>
   );
 }

@@ -8,7 +8,7 @@ export default function TopNavigationBar() {
 
   return (
     <header className="z-50">
-      <nav className="bg-black/50 text-primary w-full z-50 fixed">
+      <nav className="bg-black/50 text-primary w-full z-50 fixed will-change-scroll ">
         <div className="container flex mx-auto p-4 gap-8 justify-between items-center">
           <Link href="/">
             <a>
