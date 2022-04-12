@@ -4,7 +4,7 @@ import TopNavigationBar from "../components/_partials/TopNavigationBar";
 
 export default function HomePage() {
   return (
-    <main>
+    <main className="font-body">
       <TopNavigationBar />
 
       <section
@@ -13,7 +13,7 @@ export default function HomePage() {
       >
         <main className="container flex mx-auto min-h-screen bg-black/20 text-white w-full px-4 items-center justify-between">
           <section className="max-w-screen-md py-20">
-            <h1 className="font-bold text-4xl md:text-6xl">
+            <h1 className="font-black text-4xl md:text-6xl lg:text-8xl">
               Lorem ipsum dolor sit amet{" "}
               <span className="text-primary">ipsum dolor</span>
             </h1>

@@ -10,7 +10,7 @@ export default defineConfig({
       fontFamily: {
         mono: ["Space Mono", "monospace", "ui-monospace", "SFMono-Regular"],
         display: ["Poppins", "Oswald"],
-        body: ["Cabin", "Open Sans"],
+        body: ["tt-commons", "Cabin", "Open Sans"],
       },
       colors: {
         alt: "#1C3386",
