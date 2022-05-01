@@ -21,6 +21,7 @@ export default function HomePage() {
 export function HomeHeroSection() {
   return (
     <section
+      id="top"
       style={{ backgroundImage: "url(/images/hero-bg.webp)" }}
       className="bg-no-repeat bg-fixed min-h-screen snap-start snap-always"
     >
@@ -44,7 +45,12 @@ export function HomeHeroSection() {
           </div>
         </section>
 
-        <aside>x</aside>
+        <aside className="flex flex-col h-full gap-4 justify-center">
+          <a
+            href="#philosophy"
+            className="border-primary rounded-full border-4 h-8 w-8"
+          />
+        </aside>
       </main>
     </section>
   );
@@ -53,6 +59,7 @@ export function HomeHeroSection() {
 export function HomePhilosophySection() {
   return (
     <main
+      id="philosophy"
       style={{ backgroundImage: "url(/images/philosophy-bg.webp)" }}
       className="bg-no-repeat bg-fixed min-h-screen snap-start snap-always"
     >
@@ -87,6 +94,7 @@ export function HomePhilosophySection() {
 export function HomeBusinessesSection() {
   return (
     <main
+      id="business"
       style={{ backgroundImage: "url(/images/business-bg.webp)" }}
       className="bg-no-repeat bg-fixed min-h-screen snap-start snap-always"
     >
