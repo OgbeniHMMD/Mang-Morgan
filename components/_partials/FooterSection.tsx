@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 export default function FooterSection() {
-  // const sections = ["Who We Are", "Businesses", "Contact Us", "Newsletter"];
   const sections = [
     {
       title: "Who We Are",
@@ -31,7 +30,10 @@ export default function FooterSection() {
   ];
 
   return (
-    <footer id="footer" className="bg-primary text-black text-sm w-full">
+    <footer
+      id="footer"
+      className="bg-primary text-black text-sm w-full snap-end"
+    >
       <div className="container mx-auto py-8 px-4">
         <div className="grid py-16 gap-8 grid-cols-2 md:grid-cols-4">
           {sections.map((section, i) => (

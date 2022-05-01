@@ -4,9 +4,9 @@ import TopNavigationBar from "../components/_partials/TopNavigationBar";
 
 export default function DefaultLayout({ children }: Children) {
   return (
-    <main className="font-body">
+    <main className="font-body h-screen snap-y snap-mandatory snap-always overflow-y-auto snap-start snap">
       <TopNavigationBar />
-      <div>{children}</div>
+      {children}
       <FooterSection />
     </main>
   );
