@@ -7,11 +7,11 @@ export default function AboutPage() {
     <DefaultLayout>
       <div id="top">
         <section
-          style={{ backgroundImage: "url(/images/home-hero/001.webp)" }}
-          className="bg-no-repeat bg-fixed min-h-screen"
+          style={{ backgroundImage: "url(/images/hero/about-001.webp)" }}
+          className="bg-no-repeat bg-bottom bg-fixed min-h-screen"
         >
-          <main className="container mx-auto min-h-screen bg-black/20 text-white w-full px-4">
-            <section className="py-20">
+          <main className="min-h-screen bg-black/30 text-white w-full">
+            <section className="container mx-auto py-20 px-4">
               <h1 className="flex font-black font-display pt-20 text-4xl gap-4 md:text-6xl lg:text-7xl ">
                 <div>About</div>
                 <div className="text-primary">Us</div>

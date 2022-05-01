@@ -3,8 +3,8 @@ export default function MissionAndVisionSection() {
     <section id="mission-vision" className="bg-white">
       <div className="container mx-auto px-4 gap-8 md:flex">
         <div
-          className="bg-no-repeat bg-cover hidden md:-mt-32 md:-mb-8 md:w-3/12 md:block lg:min-w-4/12"
-          style={{ backgroundImage: "url(/images/about-page/001.webp)" }}
+          className="bg-no-repeat bg-bottom bg-cover hidden md:-mt-32 md:-mb-8 md:w-3/12 md:block lg:min-w-4/12"
+          style={{ backgroundImage: "url(/images/about/side-image.webp)" }}
         />
         <div className="flex flex-col py-12 gap-10">
           <div className="flex-grow pb-20">

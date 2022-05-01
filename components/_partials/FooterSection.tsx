@@ -6,8 +6,8 @@ export default function FooterSection() {
     {
       title: "Who We Are",
       links: [
-        { title: "About Us", slug: "#/about" },
-        { title: "Our Services", slug: "#/services" },
+        { title: "About Us", slug: "/about" },
+        { title: "Our Services", slug: "/services" },
         { title: "Mission & Vision", slug: "#/mission-vision" },
       ],
     },
