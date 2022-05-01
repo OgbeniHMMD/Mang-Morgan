@@ -1,28 +1,31 @@
-export default function NavigationDrawer() {
+export default function NavigationDrawer({ toggle }: any) {
   const sections = [
     {
       title: "Who we/are",
       links: [
         { title: "About Us", slug: "/about#top" },
-        { title: "Mission & Vision", slug: "/about#mision-vision" },
+        { title: "Mission & Vision", slug: "/about#mission-vision" },
         { title: "Meet The Team", slug: "/about#team" },
       ],
     },
     {
       title: "Our/Businesses",
       links: [
-        { title: "Real Estate", slug: "#" },
-        { title: "Digital Assets", slug: "#" },
-        { title: "Medical Consultancy", slug: "#" },
-        { title: "Distribution", slug: "#" },
+        { title: "Real Estate", slug: "#/services#/real-estate" },
+        { title: "Digital Assets", slug: "#/services#digital-assets" },
+        {
+          title: "Medical Consultancy",
+          slug: "#/services#medical-consultancy",
+        },
+        { title: "Distribution", slug: "#/services#distribution" },
       ],
     },
     {
       title: "Contact/Us",
       links: [
-        { title: "Send Us A Mail", slug: "#" },
-        { title: "Make an Enquiry", slug: "#" },
-        { title: "FAQ", slug: "#" },
+        { title: "Send Us A Mail", slug: "#/contact" },
+        { title: "Make an Enquiry", slug: "#/contact" },
+        { title: "FAQ", slug: "#/faq" },
       ],
     },
     {
@@ -47,7 +50,7 @@ export default function NavigationDrawer() {
               </span>
             </h1>
             {section.links.map((link, i) => (
-              <a key={i} href={link.slug}>
+              <a key={i} href={link.slug} onClick={() => toggle(false)}>
                 {link.title}
               </a>
             ))}

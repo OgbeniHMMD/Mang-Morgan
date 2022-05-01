@@ -30,7 +30,7 @@ export default function TopNavigationBar() {
         </div>
       </nav>
 
-      {showDrawer && <NavigationDrawer />}
+      {showDrawer && <NavigationDrawer toggle={setShowDrawer} />}
     </header>
   );
 }
