@@ -5,7 +5,7 @@ import MissionAndVisionSection from "../components/about/MissionAndVisionSection
 export default function AboutPage() {
   return (
     <DefaultLayout>
-      <div id="top">
+      <div id="" className="snap-start">
         <section
           style={{ backgroundImage: "url(/images/hero/about-001.webp)" }}
           className="bg-no-repeat bg-bottom bg-fixed min-h-screen"
