@@ -1,9 +1,9 @@
 export default function HomeNavigator({ id }: any) {
-  const sections = ["home", "philosophy", "business", "services"];
+  const sections = ["home", "philosophy", "business"];
   const index = sections.indexOf(id);
 
   return (
-    <aside className="flex flex-col h-screen gap-4 justify-around items-center">
+    <aside className="flex flex-col h-screen min-w-20 p-1 gap-4 justify-around items-center">
       <a href={`#${sections[index - 1]}`} className="">
         {index > 0 && (
           <img
