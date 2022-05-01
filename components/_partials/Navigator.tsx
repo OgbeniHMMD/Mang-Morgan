@@ -1,5 +1,5 @@
 export default function HomeNavigator({ id }: any) {
-  const sections = ["home", "philosophy", "business"];
+  const sections = ["home", "philosophy", "business", "services"];
   const index = sections.indexOf(id);
 
   return (
