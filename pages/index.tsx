@@ -16,15 +16,17 @@ export default function HomePage() {
     <DefaultLayout>
       <>
         <div className="flex min-h-screen w-screen justify-between items-center">
-          <div className="h-screen bg-black/20 w-screen">
+          <div className="h--screen bg-black/20 w-screen">
             <Carousel
               autoPlay
               swipeable
               dynamicHeight
+              showThumbs={false}
               showStatus={false}
               showArrows={false}
               showIndicators={false}
               selectedItem={current}
+              onChange={(e) => console.log(e)}
             >
               <HomeHeroSection />
               <HomePhilosophySection />
