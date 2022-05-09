@@ -4,7 +4,7 @@ import TopNavigationBar from "../components/_partials/TopNavigationBar";
 
 export default function DefaultLayout({ children }: Children) {
   return (
-    <main className="font-body h-screen snap-y snap-mandatory snap-always overflow-y-auto snap-start snap scroll-smooth">
+    <main className="font-body scroll-smooth">
       <TopNavigationBar />
       {children}
       <FooterSection />

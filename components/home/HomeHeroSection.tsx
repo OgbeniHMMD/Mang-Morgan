@@ -1,5 +1,4 @@
 import Link from "next/link";
-import HomeNavigator from "../_partials/Navigator";
 import { ChevronRightIcon } from "@heroicons/react/solid";
 
 export default function HomeHeroSection() {
@@ -7,10 +6,10 @@ export default function HomeHeroSection() {
     <section
       id="home"
       style={{ backgroundImage: "url(/images/hero-bg.webp)" }}
-      className="bg-no-repeat bg-fixed min-h-screen snap-start snap-always"
+      className="bg-no-repeat bg-fixed min-h-screen"
     >
-      <main className="container flex mx-auto min-h-screen bg-black/20 text-white w-full px-4 items-center justify-between">
-        <section className="max-w-screen-md py-20">
+      <div className="container flex mx-auto min-h-screen bg-black/20 text-white w-full px-4 items-center ">
+        <div className="max-w-screen-md text-left py-20">
           <h1 className="font-black font-display text-4xl md:text-6xl lg:text-7xl">
             Lorem ipsum dolor sit amet{" "}
             <span className="text-primary">ipsum dolor</span>
@@ -27,10 +26,8 @@ export default function HomeHeroSection() {
               </a>
             </Link>
           </div>
-        </section>
-
-        <HomeNavigator id="home" />
-      </main>
+        </div>
+      </div>
     </section>
   );
 }

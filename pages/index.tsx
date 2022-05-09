@@ -1,18 +1,39 @@
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+
 import DefaultLayout from "../layouts/DefaultLayout";
-import TopNavigationBar from "../components/_partials/TopNavigationBar";
 
 import HomeHeroSection from "../components/home/HomeHeroSection";
 import HomePhilosophySection from "../components/home/HomePhilosophySection";
 import HomeBusinessesSection from "../components/home/HomeBusinessesSection";
+import HomeNavigator from "../components/_partials/Navigator";
+import { useState } from "react";
 
 export default function HomePage() {
+  const [current, setCurrent] = useState(0);
+
   return (
     <DefaultLayout>
       <>
-        <TopNavigationBar />
-        <HomeHeroSection />
-        <HomePhilosophySection />
-        <HomeBusinessesSection />
+        <div className="flex min-h-screen w-screen justify-between items-center">
+          <div className="h-screen bg-black/20 w-screen">
+            <Carousel
+              autoPlay
+              swipeable
+              dynamicHeight
+              showStatus={false}
+              showArrows={false}
+              showIndicators={false}
+              selectedItem={current}
+            >
+              <HomeHeroSection />
+              <HomePhilosophySection />
+              <HomeBusinessesSection />
+            </Carousel>
+          </div>
+
+          <HomeNavigator id="home" current={current} setCurrent={setCurrent} />
+        </div>
       </>
     </DefaultLayout>
   );
