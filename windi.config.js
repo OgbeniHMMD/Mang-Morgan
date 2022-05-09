@@ -18,5 +18,8 @@ export default defineConfig({
       },
     },
   },
-  plugins: [require("windicss/plugin/scroll-snap")],
+  plugins: [
+    require("windicss/plugin/scroll-snap"),
+    require("windicss/plugin/aspect-ratio"),
+  ],
 });
