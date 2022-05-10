@@ -5,18 +5,18 @@ export default function FooterSection() {
     {
       title: "Who We Are",
       links: [
-        { title: "About Us", slug: "/about" },
-        { title: "Our Services", slug: "/services" },
-        { title: "Mission & Vision", slug: "#/mission-vision" },
+        { title: "About Us", slug: "/about#top" },
+        { title: "Mission & Vision", slug: "/about#mission-vision" },
+        { title: "Meet The Team", slug: "/about#team" },
       ],
     },
     {
       title: "Businesses",
       links: [
-        { title: "Real Estate", slug: "#/real-estate" },
-        { title: "Digital Assets", slug: "#/digital-assets" },
-        { title: "Medical Consultancy", slug: "#/medical-consultancy" },
-        { title: "Distribution", slug: "#/distribution" },
+        { title: "Real Estate", slug: "/services/real-estate" },
+        { title: "Digital Assets", slug: "/services/digital-assets" },
+        { title: "Medical Consultancy", slug: "/services/medical-consultancy" },
+        { title: "Distribution", slug: "/services/distribution" },
       ],
     },
     {
