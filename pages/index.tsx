@@ -20,13 +20,11 @@ export default function HomePage() {
             <Carousel
               autoPlay
               swipeable
-              dynamicHeight
               showThumbs={false}
               showStatus={false}
               showArrows={false}
               showIndicators={false}
               selectedItem={current}
-              onChange={(e) => console.log(e)}
             >
               <HomeHeroSection />
               <HomePhilosophySection />
