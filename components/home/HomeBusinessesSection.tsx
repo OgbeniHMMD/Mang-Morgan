@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { ChevronRightIcon } from "@heroicons/react/solid";
+
 export default function HomeBusinessesSection() {
   return (
     <main
@@ -26,7 +29,7 @@ export default function HomeBusinessesSection() {
           ].map((service) => (
             <div
               key={service}
-              className="bg-no-repeat flex transform pl-12 duration-1000 items-center hover:scale-95"
+              className="bg-no-repeat flex transform pl-12 duration-1000 items-center group hover:scale-95"
             >
               <div
                 key={service}
@@ -35,9 +38,22 @@ export default function HomeBusinessesSection() {
                 }}
                 className="bg-no-repeat bg-cover bg-center flex h-48 items-center aspect-video md:h-64 md:w-auto lg:h-92"
               >
-                <h1 className="font-black font-display -ml-12 text-2xl z-20 whitespace-nowrap md:text-3xl lg:text-4xl">
-                  {service}
-                </h1>
+                <Link href="#">
+                  <a className="flex h-full -ml-12 w-full transform duration-1000 items-center group-hover:(justify-center bg-black/80 mx-0) ">
+                    <div>
+                      <h1 className="font-black font-display text-2xl z-20 whitespace-nowrap md:text-3xl lg:text-4xl ">
+                        {service}
+                      </h1>
+
+                      <div className="text-center pt-4 hidden group-hover:block">
+                        <div className="border-primary text-primary pb-1 gap-2 inline-flex items-center">
+                          <div>Learn more</div>
+                          <ChevronRightIcon className="h-4 w-4" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </Link>
               </div>
             </div>
           ))}
