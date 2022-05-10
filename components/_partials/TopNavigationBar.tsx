@@ -12,7 +12,7 @@ export default function TopNavigationBar() {
         <div className="container flex mx-auto p-4 gap-8 justify-between items-center">
           <Link href="/">
             <a>
-              <img src="/logo-dark.svg" className="h-8 w-auto" />
+              <img src="/logo-dark.svg" className="h-8 w-auto" alt="Logo" />
             </a>
           </Link>
 
