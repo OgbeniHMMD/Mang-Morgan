@@ -5,7 +5,7 @@ import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div>
+    <div className="font-body scroll-smooth">
       <Head>
         <title>Mang Morgan</title>
       </Head>

@@ -5,7 +5,7 @@ import TopNavigationBar from "../components/_partials/TopNavigationBar";
 
 export default function DefaultLayout({ children, title }: Children) {
   return (
-    <main className="font-body scroll-smooth">
+    <main>
       <Head>{title && <title>{title} | Mang Morgan</title>}</Head>
 
       <TopNavigationBar />
